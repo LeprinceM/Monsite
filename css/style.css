@@ -21,9 +21,10 @@ header {
 }
 
 header h1 {
-    font-family: 'Customblack', 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
+    font-weight: normal;
 }
 
 header nav ul {
@@ -38,7 +39,7 @@ header nav ul {
 header nav a {
     text-shadow: 2px 2px 2px black, 3px 3px 3px gray;
     color: white;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
     padding: 5px 10px;
     border-radius: 4px;
@@ -103,7 +104,7 @@ nav ul li {
 
 nav ul li a {
     color: #005b9a;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -111,64 +112,4 @@ nav ul li a {
 nav ul li:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    background: #f0fcfc;
-}
-
-/* --- Media Queries --- */
-
-/* Tablettes (écrans ≤ 768px) */
-@media (max-width: 768px) {
-    header {
-        padding: 30px 15px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    section {
-        padding: 15px;
-        margin: 15px auto;
-    }
-
-    section ul,
-    section p {
-        max-width: 90%;
-    }
-}
-
-/* Mobiles (écrans ≤ 480px) */
-@media (max-width: 480px) {
-    header {
-        padding: 20px 10px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    header nav a {
-        font-size: 0.9rem;
-        padding: 5px;
-    }
-
-    section {
-        padding: 10px;
-        margin: 10px auto;
-        border-radius: 8px;
-    }
-
-    footer p {
-        font-size: 0.8rem;
-    }
-}
+    background: #f0f
