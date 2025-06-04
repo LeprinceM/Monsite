@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Customblack';
+    src: url('font/Blacknorthdemo-mLE25.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f3f4f6;
+    text-align: center;
+    line-height: 1.8;
+}
+
+header {
+    background: linear-gradient(135deg, #63cdcd, #0066cc);
+    color: white;
+    padding: 40px 20px;
+    border-bottom: 5px solid #005b9a;
+}
+
+header h1 {
+    font-family: 'Customblack', 'Arial', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+figure figcaption h1 {
+    color: #005b9a;
+    margin-top: 10px;
+}
+
+figure figcaption p {
+    font-style: italic;
+    color: #555;
+}
+
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00cccc;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+section ul,
+section p {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+footer {
+    background: #005b9a;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+nav ul li {
+    background: white;
+    border: 2px solid #00cccc;
+    border-radius: 15px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a {
+    color: #005b9a;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: #f0fcfc;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    section ul,
+    section p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header nav a {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
